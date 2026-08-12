@@ -1,0 +1,12 @@
+Jordan Lee
+Frontend Developer
+
+Experience:
+- 3 years building UI with React, TypeScript, and CSS
+- Led migration of legacy jQuery app to modern component architecture
+- Worked closely with designers on accessibility improvements
+
+Education:
+B.A. Design, Riverside College
+
+Skills: JavaScript, TypeScript, React, HTML, CSS

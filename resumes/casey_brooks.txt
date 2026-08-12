@@ -1,0 +1,12 @@
+Casey Brooks
+DevOps Engineer
+
+Experience:
+- 6 years managing cloud infrastructure on AWS and GCP
+- Automated deployments using Python scripts and Terraform
+- Maintained Kubernetes clusters for microservices architecture
+
+Education:
+B.S. Computer Engineering, Lakeside Institute of Technology
+
+Skills: Python, AWS, Kubernetes, Terraform, Bash

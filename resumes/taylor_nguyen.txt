@@ -1,0 +1,12 @@
+Taylor Nguyen
+Machine Learning Engineer
+
+Experience:
+- 3 years building ML models using Python, scikit-learn, and PyTorch
+- Deployed models to production with Flask APIs
+- Worked on NLP projects involving text classification
+
+Education:
+M.S. Computer Science, Ridgeway University
+
+Skills: Python, PyTorch, scikit-learn, Flask, NLP

@@ -1,0 +1,12 @@
+Sam Taylor
+Data Analyst
+
+Experience:
+- 2 years analyzing sales data using Python and Excel
+- Built dashboards in Tableau for quarterly reporting
+- Automated reporting scripts with Python and pandas
+
+Education:
+B.S. Statistics, Northfield University
+
+Skills: Python, Excel, Tableau, SQL

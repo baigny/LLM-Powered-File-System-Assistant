@@ -1,0 +1,12 @@
+Alex Morgan
+Software Engineer
+
+Experience:
+- 4 years building backend services in Python and Django
+- Wrote data pipelines using Python, pandas, and PostgreSQL
+- Familiar with REST APIs, Docker, and CI/CD pipelines
+
+Education:
+B.S. Computer Science, State University
+
+Skills: Python, SQL, Docker, Git, Linux
