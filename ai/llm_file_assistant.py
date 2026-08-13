@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
     if "summary" in query.lower() and source_filepath:
         base = os.path.splitext(os.path.basename(source_filepath))[0]
-        output_path = os.path.join(os.path.dirname(source_filepath), f"{base}_summary.txt")
+        output_path = os.path.join("output", f"{base}_summary.txt")
         wrapped_answer = "\n".join(
             textwrap.fill(paragraph, width=80) for paragraph in answer.splitlines()
         )

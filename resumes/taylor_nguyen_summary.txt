@@ -1,6 +1,0 @@
-Here is a summary in my own words:
-
-Taylor Nguyen is a Machine Learning Engineer with 3 years of experience. She has
-expertise in building and deploying models for NLP and computer vision tasks
-using Python and PyTorch. Her top skills include machine learning, programming
-languages like Python, and software tools like Flask and Docker.
