@@ -1,7 +1,7 @@
 # Resume File Assistant — LLM Tool Calling Assignment
 
 ## Context
-Assignment: build LLM tool-calling system over local file system for resume files. Two deliverables: `fs_tools.py` (file ops) + `llm_file_assistant.py` (LLM wired to tools). Must run zero-cost — use **Ollama** (local model, no API key, no billing) instead of paid Anthropic/OpenAI. Project built phase by phase, not all at once, so each stage can be tested before moving on.
+Assignment: build LLM tool-calling system over local file system for resume files. Two deliverables: `fs_tools.py` (file ops) + `llm_file_assistant.py` (LLM wired to tools).  use **Ollama** (local model, no API key, no billing)  
 
 Project root: `c:\Nabil\Projects\LLM-Powered-File-System-Assistant` (existing repo).
 
@@ -55,7 +55,7 @@ Generate 6-8 short dummy `.txt` resumes in `resumes/` (varied names, some mentio
 - Import `fs_tools` functions from `backend.fs_tools` (need `ai/` and `backend/` both importable — run from project root, or add root to `sys.path`).
 - Define JSON tool schemas for the 4 `fs_tools` functions (name, description, parameters).
 - Agent loop: send user query + tool schemas → if response has `tool_calls`, dispatch to matching `fs_tools` function by name, feed result back as a `tool` role message → repeat until model returns plain text.
-- CLI entrypoint: `python ai/llm_file_assistant.py "Find resumes mentioning Python experience"` (argv or simple input loop, run from project root).
+- CLI entrypoint: `python ai/llm_file_assistant.py "Find resumes mentioning Python"` (argv or simple input loop, run from project root).
 - Support the 3 example queries from the brief as manual test cases.
 
 Verify: run all 3 example queries, confirm correct tool(s) invoked and sane final answer.
@@ -66,7 +66,3 @@ Verify: run all 3 example queries, confirm correct tool(s) invoked and sane fina
 
 ## Phase 6 — Demo video
 Not code — user records 2-3 min screen capture running the 3 example queries after Phase 4 works. Flag as manual step, not something to automate.
-
-## Notes
-- Build/test phases sequentially — do not write Phase 4 before Phase 2/3 are verified working.
-- No API keys, no cost: everything runs against local Ollama daemon.
