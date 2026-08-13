@@ -1,12 +1,29 @@
 Taylor Nguyen
 Machine Learning Engineer
+Email: taylor.nguyen@example.com | Location: Seattle, WA
+
+Summary:
+Machine Learning Engineer with 3 years of experience taking models from prototype
+to production, spanning NLP, computer vision, and MLOps.
 
 Experience:
 - 3 years building ML models using Python, scikit-learn, and PyTorch
 - Deployed models to production with Flask APIs
 - Worked on NLP projects involving text classification
+- Built a computer vision pipeline for defect detection on a manufacturing line
+- Collaborated with data engineers to build feature pipelines in Airflow
+- Presented model performance results to non-technical stakeholders monthly
+
+Projects:
+- Text Classifier: fine-tuned a transformer model for support-ticket routing, cutting manual triage time by 30%
+- Defect Detector: trained a CNN on production line images, deployed via Flask API with Docker
 
 Education:
 M.S. Computer Science, Ridgeway University
 
-Skills: Python, PyTorch, scikit-learn, Flask, NLP
+Certifications: AWS Certified Machine Learning – Specialty
+
+Publications:
+- "Efficient Text Classification on Edge Devices", ML Ops Conference, 2025
+
+Skills: Python, PyTorch, scikit-learn, Flask, NLP, Docker, Airflow, Kubernetes, MLflow

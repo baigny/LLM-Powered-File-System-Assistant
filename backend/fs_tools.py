@@ -4,14 +4,23 @@ from docx import Document
 
 def read_file(filepath):
     try:
+        if os.path.isdir(filepath):
+            results = []
+            for entry in list_files(filepath):
+                sub_result = read_file(os.path.join(filepath, entry["name"]))
+                if sub_result["success"]:
+                    results.append({"file": entry["name"], "content": sub_result["content"]})
+            return {"success": True, "files": results}
+
         ext = os.path.splitext(filepath)[1].lower()
 
         if ext == ".txt":
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
         elif ext == ".pdf":
-            reader = PdfReader(filepath)
-            content = "\n".join(page.extract_text() or "" for page in reader.pages)
+            with open(filepath, "rb") as f:
+                reader = PdfReader(f)
+                content = "\n".join(page.extract_text() or "" for page in reader.pages)
         elif ext == ".docx":
             doc = Document(filepath)
             content = "\n".join(p.text for p in doc.paragraphs)
@@ -62,6 +71,14 @@ def write_file(filepath, content):
 
 def search_in_file(filepath, keyword):
     try:
+        if os.path.isdir(filepath):
+            all_matches = []
+            for entry in list_files(filepath):
+                sub_result = search_in_file(os.path.join(filepath, entry["name"]), keyword)
+                if sub_result["success"] and sub_result["matches"]:
+                    all_matches.append({"file": entry["name"], "matches": sub_result["matches"]})
+            return {"success": True, "matches": all_matches}
+
         result = read_file(filepath)
         if not result["success"]:
             return result
