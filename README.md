@@ -2,6 +2,7 @@
 
 A local, zero-cost LLM tool-calling system over resume files. An LLM (Ollama, running `llama3.1` locally — no API key, no billing) decides which file-system tool to call based on a natural-language query, then answers using the real tool results.
 
+
 ## Project structure
 
 ```
@@ -110,6 +111,10 @@ Mitigations applied (see `ai/llm_file_assistant.py`):
 
 - The system prompt forces one-shot **directory-mode** calls for "read all" / "search all" queries, instead of letting the model loop per-file — this is the fix for hallucinated filenames and skipped files.
 - The "create a summary" flow no longer asks the model to call `write_file` at all. The model just answers with the summary text (the same reliable path used for query 1), and the Python CLI code writes that text to disk itself. This sidesteps the narrated-tool-call failure instead of trying to parse it out of free text.
+
+## Demo video
+
+[Watch the demo](https://drive.google.com/file/d/1Y273WrNRN5gd6xjJiQOlGn0tNbhtccVA/view?usp=drive_link)
 
 ## requirements.txt
 
