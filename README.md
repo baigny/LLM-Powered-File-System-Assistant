@@ -114,7 +114,7 @@ Mitigations applied (see `ai/llm_file_assistant.py`):
 
 ## Demo video
 
-[Watch the demo](https://drive.google.com/file/d/1Y273WrNRN5gd6xjJiQOlGn0tNbhtccVA/view?usp=drive_link)
+[Watch the demo](https://drive.google.com/drive/folders/1Jre-4z4j6frGPkO-R5GGVHLomIgkdIhE)
 
 ## requirements.txt
 
